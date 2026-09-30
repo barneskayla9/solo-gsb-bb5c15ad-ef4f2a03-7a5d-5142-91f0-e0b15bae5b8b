@@ -1,0 +1,21 @@
+{
+  "name": "power-load-rehearsal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "活动配电负载排演：配电箱-回路树、设备时段负载汇总、超限检测与改接预演",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev:server": "node server/server.js",
+    "dev:web": "npm --prefix web run dev",
+    "build:web": "npm --prefix web run build",
+    "test:smoke": "node scripts/smoke.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "express": "^4.21.2"
+  }
+}
